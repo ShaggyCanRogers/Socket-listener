@@ -1,0 +1,17 @@
+alıntıdır
+
+
+1) MySocket içerisindeki ip adresi Kali Linux'ün bağlı olduğu modemin public ip adresi olmalıdır.
+Bu adrese Google'da what is my ip yazılarak ulaşılabilir. (Tabii VPN vs. çalışmıyor olmalı)
+
+2) MySocketListener içerisindeki ip adresi Kali Linux'ün lokal ip adresi olmalıdır. 
+Yani ifconfig sonucundaki ip adresi. Fakat Kali Linux modeme direk bağlı olmalıdır.
+Kısacası usb wi-fi kartı takıp modeme bağlanmalıdır. NAT Network ile bağlı olursa çalışmaz.
+
+3) Kali Linux'de Ip forwarding etkin hale getirilmiş olmalıdır.
+
+4) Kali Linux'un bağlı olduğu modemden port yönlendirilmesi yapılmalıdır.
+Örneğin 8080'den gelen bilgiler Kali Linux'un lokal ip adresine yönlendirilmelidir.
+Bunun için modemin admin arayüzüne ulaşılmalıdır. 
+Eğer Etik Hacker Olma Kursu'nu aldıysanız Dış Ağ Trojan bölümüne bakabilirsiniz, 
+internet sağlayıcınızı arayıp sizin için yapmasını veya telefonda anlatmasını isteyebilirsiniz.
